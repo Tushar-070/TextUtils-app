@@ -6,19 +6,16 @@ export default function TextForm(props) {
         backgroundColor:props.mode==='dark'?'#597d9e':'white'
     }
     const handleUpClick = () => {
-        console.log("button was clicked ")
         let n = text.toUpperCase()
         setText(n)
         props.showAlert('Converted to upperCase!', 'success')
     }
     const handleLoClick = () => {
-        console.log("button was clicked ")
         let n = text.toLowerCase()
         setText(n)
         props.showAlert('Converted to lowerCase!', 'success')
     }
     const handleClear = () => {
-        console.log("button was clicked ")
         setText("")
         props.showAlert('Text Cleared!', 'success')
         
